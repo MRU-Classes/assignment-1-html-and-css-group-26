@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact FouadTech">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | FouadTech</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="FouadTech logo" />
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Contact Us</h1>
+            <p>Got a question, suggestion, or just want to say hi? Fill out the form below and we’ll get back to you soon.</p>
+
+            <form action="mailto:fouadtech@email.com" method="POST">
+                <label for="subject">Subject (required):</label><br>
+                <input type="text" id="subject" name="subject" maxlength="60" required><br><br>
+
+                <label for="email">Email (required):</label><br>
+                <input type="email" id="email" name="email" placeholder="example@email.com" pattern="^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$" required><br><br>
+
+                <label for="message">Message (required):</label><br>
+                <textarea id="message" name="message" rows="4" cols="40" required></textarea><br><br>
+
+                <label for="phone">Phone (optional):</label><br>
+                <input type="tel" id="phone" name="phone" placeholder=\"123-456-7890\" pattern=\"\\d{3}-\\d{3}-\\d{4}\"><br><br>
+
+                <fieldset>
+                    <legend>Best way to reach you:</legend>
+                    <input type="radio" id="emailRadio" name="contactmethod" value="email" checked>
+                    <label for="emailRadio">Email</label><br>
+                    <input type="radio" id="phoneRadio" name="contactmethod" value="phone">
+                    <label for="phoneRadio">Phone</label>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend>What are you contacting us about?</legend>
+                    <input type="checkbox" id="support" name="reason" value="support">
+                    <label for="support">Support</label><br>
+                    <input type="checkbox" id="collab" name="reason" value="collab">
+                    <label for="collab">Collaboration</label>
+                </fieldset><br>
+
+                <label for="date">Preferred Contact Date:</label><br>
+                <input type="date" id="date" name="date"><br><br>
+
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </form>
+
+            <!-- Contact form section with all required input fields -->
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FouadTech. All rights reserved.</p>
+    </footer>
+</body>
+</html>
